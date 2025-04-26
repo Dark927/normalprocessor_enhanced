@@ -1,6 +1,4 @@
-using System;
 using UnityEditor;
-using UnityEditor.Experimental;
 using UnityEngine;
 
 namespace dev.sudohub.normalprocessor
@@ -93,7 +91,7 @@ namespace dev.sudohub.normalprocessor
                 computeShader.DisableKeyword("USE_SCHARR");
         }
 
-        internal void ComputeLUT(AnimationCurve curve)
+        public void ComputeLUT(AnimationCurve curve)
         {
             for (int i = 0; i < resolution; i++)
             {

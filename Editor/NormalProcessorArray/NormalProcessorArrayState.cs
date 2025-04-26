@@ -78,7 +78,7 @@ namespace dev.sudohub.normalprocessor
         {
             Resize(size);
         }
-        internal void Resize(Vector2Int size)
+        public void Resize(Vector2Int size)
         {
             Size = size;
             presets = new Preset[size.x * size.y];

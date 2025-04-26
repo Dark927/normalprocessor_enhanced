@@ -3,7 +3,6 @@ using UnityEditor;
 using UnityEngine;
 using UnityEditor.UIElements;
 using UnityEngine.UIElements;
-using System.ComponentModel;
 
 namespace dev.sudohub.normalprocessor
 {
@@ -14,7 +13,7 @@ namespace dev.sudohub.normalprocessor
         private PreviewState previewState = new();
         private Lazy<NormalProcessorGPU> _processor = new();
 
-        private VisualElement gridViewport;//store grid viewport to change grid count based on size
+        private VisualElement gridViewport; //store grid viewport to change grid count based on size
         private Image prevSelected;
 
         #region menu
